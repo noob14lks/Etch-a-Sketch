@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <div class="sketchpad">
+        <div class="tools">
+            <button>
+                <label for="Color picker">Color picker</label>
+                <input type="color" name="Color picker" id="picker">
+            </button>
+            <button>RGB</button>
+            <button>Clear</button>
+            <button>Eraser</button>
+        </div>
+        <div class="space"></div>
+        <input type="range" name="" id="range" min="16" max="64" value="16">
+        <div class="size"><h3>Size : <span class="num"></span></h3></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
