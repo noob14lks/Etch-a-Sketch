@@ -50,6 +50,7 @@ header{
 label{
     text-align: center;
     padding: 5px;
+    cursor: pointer;
 }
 
 button{
@@ -60,10 +61,14 @@ button{
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 
 .space{
     width: 960px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .size{
