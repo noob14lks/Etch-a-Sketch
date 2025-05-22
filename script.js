@@ -36,6 +36,7 @@ color.addEventListener("click", () => {
 })
 
 rgb.addEventListener("click", () => {
+  eraserActive = false;
   RGBActive = true;
 })
 
