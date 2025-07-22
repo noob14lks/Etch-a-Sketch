@@ -47,10 +47,15 @@ label.addEventListener("click", () => {
 
 function createGrid(value){
     space.innerHTML = "";
+
+    const parentWidth = space.offsetWidth * 0.9;
+    const boxSize = Math.floor(parentWidth / value);
+
   for (let i = 0; i < value ** 2; ++i) {
     let div = document.createElement("div");
-    div.style.width = Math.floor(960 / value) + "px";
-    div.style.height = Math.floor(960 / value) + "px";
+
+    div.style.width = boxSize + "px";
+    div.style.height = boxSize + "px";
     div.style.backgroundColor = "white";
     div.addEventListener("mouseover", () => {
       if (eraserActive) {

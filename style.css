@@ -35,6 +35,8 @@ header{
 .tools{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #picker {
@@ -65,7 +67,7 @@ button{
 }
 
 .space{
-    width: 960px;
+    width: 90%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -77,4 +79,16 @@ button{
 
 #range{
   cursor: pointer;
+}
+
+@media (max-width: 1260px) {
+    .sketchpad{
+        width: 80%;
+    }
+}
+@media (max-width: 576px) {
+    .sketchpad{
+        width: 90%;
+    }
+    
 }
